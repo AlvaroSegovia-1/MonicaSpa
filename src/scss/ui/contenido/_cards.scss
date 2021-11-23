@@ -34,7 +34,8 @@
     background-color: v.$blanco;
     max-width: 85%;
     /* margin: 1rem auto 0 auto; */
-    border: 2px solid v.$secundario;
+    //border: 2px solid v.$secundario;
+    border: 2px dashed v.$secundario;
     border-radius: 7px;
     position: relative;
     margin: 0 auto;
