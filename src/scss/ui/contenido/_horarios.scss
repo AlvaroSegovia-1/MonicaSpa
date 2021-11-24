@@ -44,3 +44,26 @@
     text-align: center;
   }
 }
+
+.tabla {
+  width: 100%;
+  border: 0.3rem solid v.$secundario;
+  text-align: center;
+  border-collapse: collapse;
+
+  &__thead {
+    background-color: v.$secundario;
+  }
+  &__th {
+    padding: 1.3rem;
+  }
+  &__tr {
+    &:hover {
+      background-color: darken(v.$primario, 10%);
+    }
+  }
+  &__td {
+    padding: 1.1rem;
+    font-size: 1.9 rem;
+  }
+}
