@@ -1,0 +1,28 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.cita {
+  background-image: url(../img/bg_citas.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; // Efecto paralax
+  padding: 5rem;
+  text-align: center;
+  &__heading {
+    @include m.heading;
+    color: v.$blanco;
+    font-size: 4.5rem;
+  }
+  &__texto {
+    max-width: 60rem;
+    margin: 0 auto;
+    //text-align: center;
+    color: v.$blanco;
+    line-height: 1.8;
+  }
+  &__enlace {
+    @include m.boton(v.$primario, v.$blanco);
+    padding: 1rem 10rem;
+    border-radius: 4px;
+  }
+}
