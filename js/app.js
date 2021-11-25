@@ -13,15 +13,22 @@
  */
 
 var swiper = new Swiper(".swiper", {
-    effect: "cube",
-    grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
+  effect: "cube",
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 70,
+    shadowScale: 0.94,
+  },
+  /* pagination: {
+    el: ".swiper-pagination",
+  }, */
+  pagination: true,
+  navigation: true,
+  createElements: true,
+  autoplay: {
+    delay: 4000,
+  },
+  loop: true,
+});
