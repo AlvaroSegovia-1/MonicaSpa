@@ -18,17 +18,17 @@ var swiper = new Swiper(".swiper", {
   cubeEffect: {
     shadow: true,
     slideShadows: true,
-    shadowOffset: 70,
-    shadowScale: 0.94,
+    shadowOffset: 90,
+    shadowScale: 0.84,
   },
-  /* pagination: {
+  pagination: {
     el: ".swiper-pagination",
-  }, */
-  pagination: true,
+  },
+  //pagination: true,
   navigation: true,
   createElements: true,
   autoplay: {
-    delay: 4000,
+    delay: 5000,
   },
   loop: true,
 });
